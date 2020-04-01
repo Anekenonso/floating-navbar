@@ -1,0 +1,83 @@
+
+
+/* the nav-bar styling */
+.navbar{
+    background: none;
+    z-index: 1;
+    width: 90%;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_list ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar_list ul li {
+    margin-left: 50px;
+}
+
+.navbar_list ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+    display: block;
+}
+
+.navbar_list ul li button{
+    background: linear-gradient(112.82deg, #a044ff 19.93%, #ad50ca 102.22%);
+    border: none;
+    padding: 10px 20px;
+    font-family: 'inter';
+    font-weight: bold;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    -webkit-transition: .4s ease;
+    transition: 4s ease;
+}
+
+.navbar_list ul li button:hover{
+    transform: translateY(-5px);
+}
+
+.navbar.scroll{
+    background: white;
+    top: -100px;
+    border-radius: 20px;
+    width: 90%;
+    animation: fadeDown .4s ease 1s forwards;
+    box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.2);
+}
+
+@keyframes fadeDown {
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
+.navbar_brand{
+    font-family: 'Poppins';
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    background: linear-gradient(112.82deg, #a044ff 19.93%, #ad50ca 102.22%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
